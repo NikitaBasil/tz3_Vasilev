@@ -1,5 +1,5 @@
 # README для ТЗ 3
-#### Статус тестирования
+## Статус тестирования
 [![Python application](https://github.com/NikitaBasil/tz3_Vasilev/actions/workflows/python-app.yml/badge.svg)](https://github.com/NikitaBasil/tz3_Vasilev/actions/workflows/python-app.yml)
 
 #### Эта программа берет из папки проекта файл с названием test file.txt и совершает с ним 5 базовых операций:
