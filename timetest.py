@@ -1,6 +1,7 @@
 import time
 import random
 from tz3_main import min_in_file, max_in_file, proizv_of_file, sum_of_file, square_root_of_sum
+import matplotlib.pyplot as plt
 
 
 def time_of_operations():
