@@ -20,6 +20,11 @@ def time_of_operations():
         durations.append(time.time() - start_time)
         print('время выполнения файла с ', numbers_of_values[i], 'числами равна ',durations[i], 'сек')
         test_file.clear()
+    plt.title("зависимость времени работы от объема данных")
+    plt.xlabel("количество чисел в файле")
+    plt.ylabel("время в секундах")
+    plt.plot(numbers_of_values, durations, "r--")
+    plt.show()
 
 
 time_of_operations()
