@@ -1,4 +1,6 @@
 from math import sqrt
+import sys
+
 
 def read_file():
     f = open("test file.txt", "r")
