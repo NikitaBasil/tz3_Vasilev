@@ -24,7 +24,7 @@ def time_of_operations():
     plt.xlabel("количество чисел в файле")
     plt.ylabel("время в секундах")
     plt.plot(numbers_of_values, durations, "r--")
-    plt.show()
+    plt.savefig('graphs/graph.png')
 
 
 time_of_operations()
