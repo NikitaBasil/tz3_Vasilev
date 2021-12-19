@@ -27,5 +27,5 @@ def time_of_operations():
     plt.savefig('graphs/graph.png')
 
 
-time_of_operations(
+time_of_operations()
 
