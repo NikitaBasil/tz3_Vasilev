@@ -29,7 +29,7 @@ jobs:
       id: b
       run: python timetest.py
     - name: save-graph
-    - uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v2
       with:
         name: my-artifact
         path: graphs/graph.png
