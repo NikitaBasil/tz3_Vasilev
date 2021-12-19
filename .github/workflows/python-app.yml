@@ -28,6 +28,12 @@ jobs:
     - name: timetest
       id: b
       run: python timetest.py
+    - name: save-graph
+    - uses: actions/upload-artifact@v2
+      with:
+        name: my-artifact
+        path: graphs/graph.png
+    
     - name: send_message
       uses: appleboy/telegram-action@master
       with:
@@ -39,3 +45,4 @@ jobs:
           timetest results: ${{ steps.b.outcome }}   
 
           See changes: https://github.com/${{ github.repository }}/commit/${{github.sha}}
+    
