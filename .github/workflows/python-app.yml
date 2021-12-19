@@ -30,12 +30,12 @@ jobs:
       run: python timetest.py
     - name: send_message
       uses: appleboy/telegram-action@master
-          with:
-            to: '-1001740631878'
-            token: '5010718556:AAH-9hYZW2txZyUh4p2n1Yf-b__4HVj0Sto'
-            message: |
-              Repository: ${{ github.repository }}
-              pytest results: ${{ steps.1.outcome }} 
-              timetest results: ${{ steps.2.outcome }}   
+      with:
+        to: '-1001740631878'
+        token: '5010718556:AAH-9hYZW2txZyUh4p2n1Yf-b__4HVj0Sto'
+        message: |
+          Repository: ${{ github.repository }}
+          pytest results: ${{ steps.1.outcome }} 
+          timetest results: ${{ steps.2.outcome }}   
 
-              See changes: https://github.com/${{ github.repository }}/commit/${{github.sha}}
+          See changes: https://github.com/${{ github.repository }}/commit/${{github.sha}}
