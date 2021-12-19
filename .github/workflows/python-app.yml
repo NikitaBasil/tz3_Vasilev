@@ -23,10 +23,10 @@ jobs:
         pip install pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Test with pytest
-      id: 1
+      id: a
       run: pytest
     - name: timetest
-      id: 2
+      id: b
       run: python timetest.py
     - name: send_message
       uses: appleboy/telegram-action@master
@@ -35,7 +35,7 @@ jobs:
         token: '5010718556:AAH-9hYZW2txZyUh4p2n1Yf-b__4HVj0Sto'
         message: |
           Repository: ${{ github.repository }}
-          pytest results: ${{ steps.1.outcome }} 
-          timetest results: ${{ steps.2.outcome }}   
+          pytest results: ${{ steps.a.outcome }} 
+          timetest results: ${{ steps.b.outcome }}   
 
           See changes: https://github.com/${{ github.repository }}/commit/${{github.sha}}
