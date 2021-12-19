@@ -28,4 +28,4 @@ def time_of_operations():
 
 
 time_of_operations()
- 
+
